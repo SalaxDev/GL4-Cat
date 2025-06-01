@@ -9,7 +9,6 @@ set(SOIL2_STATIC_LIB "${CMAKE_SOURCE_DIR}/lib/SOIL2/lib/libsoil2.a")
 
 find_package(glfw3 CONFIG REQUIRED PATHS "./lib/glfw")
 find_package(soil2 CONFIG REQUIRED PATHS "./lib/SOIL2")
-find_package(glm CONFIG REQUIRED PATHS "./lib/glm")
 
 include_directories(
     "lib/glad-4.4/include"
