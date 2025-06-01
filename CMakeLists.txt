@@ -1,8 +1,7 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.30)
 project(LIGHT_TEXTURE LANGUAGES C CXX)
 
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
 
@@ -23,7 +22,7 @@ include_directories(
     "include/utils"
 )
 
-add_executable(Light 
+add_executable(GL-Cat
     src/main.cpp
     src/tools/sh_size.cpp
     src/utils/GManager.cpp
@@ -31,7 +30,7 @@ add_executable(Light
     lib/glad-4.4/src/glad.c
 )
 
-target_link_libraries(Light PRIVATE
+target_link_libraries(GL-Cat PRIVATE
     ${SOIL2_STATIC_LIB}
     glfw
     opengl32
