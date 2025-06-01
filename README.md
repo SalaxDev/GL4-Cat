@@ -1,3 +1,4 @@
+[![GL-Cat](https://img.shields.io/badge/OpenGL-4.4_Core-ff69b4?logo=opengl)]()
 # GLSL Cat Renderer
 
 # 🐱 GLSL Cat Renderer | OpenGL 4.4 Core
