@@ -48,4 +48,4 @@ For **MSVC** Compiler, You Need SOIL2 And GLFW Installed, Otherwise it Won't Wor
 
 For Executable Program For Windows User, Check out The [Releases](https://github.com/SalaxDev/GL4-Cat/releases)
 
-**NOTE That** Anti Virus Might Give Malware Warnings For Direct Download cause Program Not **Signed**
+**NOTE That** Anti Virus Might Give Malware Warnings For Direct Download because Program wasn't digitally **Signed**
