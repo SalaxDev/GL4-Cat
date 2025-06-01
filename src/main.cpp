@@ -172,32 +172,9 @@ int main(int argc, const char **argv) {
     img.release() ;
     img.setDefaultSize() ;
     
-    img.loadImage("./res/images/container.png") ;
-    GLuint texture1 ;
-    glGenTextures(1, &texture1) ;
-    glBindTexture(GL_TEXTURE_2D, texture1) ;
-    
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT) ;
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT) ;
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR) ;
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_NEAREST) ;
-    
-    if (img.file) {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA,
-            img.w, img.h, 0,
-            GL_RGBA, GL_UNSIGNED_BYTE, img.file
-        );
-        
-        glGenerateMipmap(GL_TEXTURE_2D) ;
-    }
-    
-    
     glBindVertexArray(0) ;
     glBindBuffer(GL_ARRAY_BUFFER, 0) ;
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0) ;
-    
-    img.release() ;
-    img.setDefaultSize() ;
     
     
     glm::mat4 modelMatrix(1.f) ;
@@ -286,9 +263,6 @@ int main(int argc, const char **argv) {
         
         glActiveTexture(GL_TEXTURE0) ;
         glBindTexture(GL_TEXTURE_2D, texture0) ;
-        
-        glActiveTexture(GL_TEXTURE1) ;
-        glBindTexture(GL_TEXTURE_2D, texture1) ;
         
         glBindVertexArray(vao) ;
         glDrawElements(GL_TRIANGLES, numIndices, GL_UNSIGNED_INT, NULL) ;
