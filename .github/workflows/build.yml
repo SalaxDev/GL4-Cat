@@ -12,9 +12,12 @@ jobs:
       - name: Install Dependencies
         if: matrix.os == 'ubuntu-latest'
         run: sudo apt install libglfw3-dev libsoil2-dev libgl1-mesa-dev
+      - name: Install Dependencies (macOS)
+        if: matrix.os == 'macos-latest'
+        run: brew install glfw soil
       - name: Build
         run: |
           mkdir build
           cd build
           cmake ..
-          make
+          cmake --build .
