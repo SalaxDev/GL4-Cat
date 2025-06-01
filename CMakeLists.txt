@@ -25,6 +25,10 @@ else()
         pkg_check_modules(SOIL2 REQUIRED SOIL2)
     endif()
     
+    if(NOT GLFW_FOUND)
+        find_package(glfw3 REQUIRED)
+    endif()
+    
     find_package(glfw3 REQUIRED)
     find_package(OpenGL REQUIRED)
 endif()
@@ -72,13 +76,14 @@ elseif(APPLE) #Apple
     find_library(COCOA Cocoa)
     find_library(IOKIT IOKit)
     find_library(COREVIDEO CoreVideo)
-    target_link_libraries(Gl-Cat PRIVATE
+    target_link_libraries(GL-Cat PRIVATE
         glfw
-        ${OPENGL_LIBRARIES}
+        ${GLFW_LIBRARIES}
         ${SOIL2_LIBRARIES}
-        ${COCOA_LIB}
-        ${IOKIT_LIB}
-        ${COREVIDEO_LIB}
+        ${OPENGL_LIBRARIES}
+        ${COCOA}
+        ${IOKIT}
+        ${COREVIDEO}
     )
     
 endif()
