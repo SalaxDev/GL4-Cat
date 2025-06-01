@@ -19,7 +19,7 @@ void FBRcallback(GLFWwindow *wnd, int fbw, int fbh) ;
 void update_input(GLFWwindow *wnd, glm::vec3 &position, glm::vec3 &rotation, glm::vec3 &scale) ;
 
 
-sh::Size wndSize(800, 600, "Camera") ;
+sh::Size wndSize(800, 600, "OpenGL Cat") ;
 constexpr float fps = 1000.f / 90.f ;
 
 // Vertices
