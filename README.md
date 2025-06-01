@@ -1,22 +1,20 @@
-# GL4-Cat
+# GLSL Cat Renderer
 
 # 🐱 GLSL Cat Renderer | OpenGL 4.4 Core
 
-![Cat Render Demo](screenshot.jpg) <!-- Add your screenshot later -->
-
-A **trippy 2D cat** rendered with modern OpenGL 4.4 Core Profile, featuring full RGB lighting effects and camera controls. Made with C++ and pure graphics wizardry 🧙‍♂️.
+![Cat Render](preview.png)
 
 ## 🔥 Features
-- **Physically-based lighting**: 
+- **lighting**: 
   - Ambient occlusion
   - Diffuse scattering
   - Specular highlights (RGB reflections)
 - **Interactive controls**:
-  - 🌀 Rotate cat in 3D space
-  - 🚀 Move/translate freely
-  - 🔁 Flip vertically/horizontally
-  - 📏 Dynamic resizing
-- **Perspective camera** with zoom/pan
+  - Rotate
+  - Move
+  - Flip vertically
+  - resizing
+- **Perspective camera**
 - **Texture loading** via SOIL2
 - **Matrix transformations** powered by GLM
 
@@ -33,12 +31,14 @@ A **trippy 2D cat** rendered with modern OpenGL 4.4 Core Profile, featuring full
 ## 🚀 Building & Running
 ```bash
 # Clone with submodules
-git clone --recursive https://github.com/yourusername/opengl-cat.git
+git clone https://github.com/yourusername/opengl-cat.git
 
 # Build (CMake required)
-mkdir build && cd build
+mkdir build
+cd build
 cmake ..
-make -j4
+cmake --build .
 
-# Run the majestic cat!
-./GlowingCat
+# Run the Program!
+../bin/GL-Cat
+```
