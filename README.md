@@ -30,7 +30,7 @@
 
 ## 🚀 Building & Running
 ```bash
-# Clone with submodules
+# Clone The Project
 git clone https://github.com/yourusername/opengl-cat.git
 
 # Build (CMake required)
@@ -42,11 +42,6 @@ cmake --build .
 # Run the Program!
 ../bin/GL-Cat
 ```
-## Windows
 For Executable Program For Windows User, Check out The [Releases](https://github.com/SalaxDev/GL4-Cat/releases)
 
 **NOTE That** Anti Virus Might Give Malware Warnings For Direct Download cause Program Not **Signed**
-
-## Linux/MacOS
-For **Linux(Ubuntu, Debian)/MacOS**, Need **SOIL2** And **GLFW 3.3+** On Their OS,
-You Can Run install_deps.sh For Automatic Download
