@@ -43,6 +43,9 @@ cmake --build .
 # Run the Program!
 ../bin/GL-Cat
 ```
+For **MSVC** Compiler, You Need SOIL2 And GLFW Installed, Otherwise it Won't Work
+
+
 For Executable Program For Windows User, Check out The [Releases](https://github.com/SalaxDev/GL4-Cat/releases)
 
 **NOTE That** Anti Virus Might Give Malware Warnings For Direct Download cause Program Not **Signed**
